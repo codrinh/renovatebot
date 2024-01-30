@@ -1,5 +1,3 @@
-githubConfigUrl: "https://github.com/e-conomic/"
-
 githubConfigSecret: ${gh_auth_secret}
 
 template:

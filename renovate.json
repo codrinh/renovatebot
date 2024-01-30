@@ -1,6 +1,6 @@
 {
-  "dependencyDashboard": true,
   "assigneesFromCodeOwners": true,
+  "dependencyDashboardAutoclose": true,
   "labels": ["renovateBot"],
   "extends": [
     "config:base"
@@ -8,7 +8,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["match-depName-below"],
-      "versioning": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))-dind$"
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-dind$"
     }
   ],
   "regexManagers": [
