@@ -4,4 +4,4 @@ description: A Kubernetes webhook for pods that need AWS IAM access
 version: 1.0.3
 type: application
 # renovate: image=amazon/amazon-eks-pod-identity-webhook
-appVersion: v0.4.0
+appVersion: 'v0.4.0'
