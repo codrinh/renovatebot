@@ -2,7 +2,6 @@
   "extends": [
     "config:base"
   ],
-  "registryUrls": ["https://harbor.ourcompany.com/"],
   "packageRules": [
     {
       "matchPackageNames": ["match-depName-below"],
@@ -14,7 +13,7 @@
       "description": "Yet another regex",
       "fileMatch": ["(^|/)github-actions/helm_values/arc_runner_dind\\.yaml$"],
       "matchStrings": [
-        "#\\s?renovate: image=(?<depName>.*?)\\s+?image:\\s(?<currentValue>.+)"
+        "# renovate: image=docker-dind\\s+?image:\\s(?<depName>.*?):(?<currentValue>.+)"
       ],
       "datasourceTemplate": "docker"
     }
