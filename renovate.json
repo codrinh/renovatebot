@@ -1,20 +1,22 @@
 {
-  "customManagers": [
+  "extends": [
+    "config:base"
+  ],
+  "registryUrls": ["https://harbor.ourcompany.com/"],
+  "packageRules": [
     {
-      "customType": "regex",
-      "datasourceTemplate": "docker",
-      "fileMatch": ["(^|/)Chart\\.yaml$"],
-      "matchStrings": [
-        "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\'?(?<currentValue>v.+)\\'"
-      ]
-    },
+      "matchPackageNames": ["match-depName-below"],
+      "versioning": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))-dind$"
+    }
+  ],
+  "regexManagers": [
     {
-      "customType": "regex",
-      "datasourceTemplate": "docker",
+      "description": "Yet another regex",
       "fileMatch": ["(^|/)github-actions/helm_values/arc_runner_dind\\.yaml$"],
       "matchStrings": [
         "#\\s?renovate: image=(?<depName>.*?)\\s+?image:\\s(?<currentValue>.+)"
-      ]
+      ],
+      "datasourceTemplate": "docker"
     }
   ]
 }
