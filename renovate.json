@@ -1,5 +1,6 @@
 {
   "dependencyDashboard": true,
+  "assigneesFromCodeOwners": true,
   "labels": ["renovateBot"],
   "extends": [
     "config:base"
