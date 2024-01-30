@@ -3,7 +3,7 @@
     {
       "customType": "regex",
       "datasourceTemplate": "docker",
-      "fileMatch": ["(^|/)Chart\\.yaml$"],
+      "fileMatch": ["(^|/)github-actions/helm_values/(^|/)Chart\\.yaml$"],
       "matchStrings": [
         "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\'?(?<currentValue>v.+)\\'"
       ]
