@@ -25,6 +25,7 @@ template:
           mountPath: /run/docker
           readOnly: true
     - name: dind
+      # renovate: image=docker-dind
       image: docker:24.0.7-dind-alpine3.18
       args:
         - dockerd
