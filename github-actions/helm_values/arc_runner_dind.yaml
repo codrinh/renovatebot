@@ -24,7 +24,7 @@ template:
           readOnly: true
     - name: dind
       # renovate: image=docker-dind
-      image: docker:24.0.7-dind
+      image: docker:25.0.1-dind
       args:
         - dockerd
         - --host=unix:///run/docker/docker.sock
