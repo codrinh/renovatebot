@@ -13,7 +13,7 @@
       "datasourceTemplate": "docker",
       "fileMatch": ["(^|/)github-actions/helm_values/arc_runner_dind\\.yaml$"],
       "matchStrings": [
-        "#\\s?renovate: image=(?<depName>.*?)\\s?image:\\s(?<currentValue>.+)"
+        "#\\s?renovate: image=(?<depName>.*?)\\s+?image:\\s(?<currentValue>.+)"
       ]
     }
   ]
