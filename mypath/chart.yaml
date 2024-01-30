@@ -25,8 +25,8 @@ template:
           mountPath: /run/docker
           readOnly: true
     - name: dind
-      # renovate: image=amazon/amazon-eks-pod-identity-webhook
-      appVersion: 'v0.5.0'
+# renovate: image=amazon/amazon-eks-pod-identity-webhook
+appVersion: 'v0.5.0'
       image: docker:24.0.7-dind-alpine3.18
       args:
         - dockerd
