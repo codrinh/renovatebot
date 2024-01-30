@@ -1,4 +1,6 @@
 {
+  "dependencyDashboard": true,
+  "labels": ["renovateBot"],
   "extends": [
     "config:base"
   ],
